@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mess — Concentration Game</title>
+    <link rel=icon href=favicon.png sizes="32x32" type="image/png">
+</head>
+<style>
+    body {
+        background: black;
+        font-family: sans-serif;
+        color: #fafafa;
+    }
+
+    a {
+        color: gray;
+        text-decoration: none;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        max-width: 1280px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 100px;
+        font-size: 54px;
+        line-height: 110px;
+        line-height: 60px;
+        margin: 0;
+    }
+
+    .image {
+        /*background-image: url("level_end.gif");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1;
+    }
+
+    .image img {
+        margin: auto;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+
+    .store-btn {
+        display: inline-block;
+        margin-top: 60px;
+    }
+
+    .appstore-img {
+        /*width: 200px;*/
+        width: auto;
+        height: 59px;
+        margin-right: 10px;
+    }
+
+    .gplay-img {
+        /*width: 180px;*/
+        width: auto;
+        height: 59px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+    }
+
+    .intro-image {
+        width: 750px;
+        height: auto;
+    }
+
+    .icon {
+        border: 1px solid #222;
+        border-radius: 25px;
+        vertical-align: middle;
+        margin-bottom: 30px;
+        margin-right: 20px;
+    }
+
+    @media(max-width: 1120px) {
+
+        /*h1 {*/
+        /*    font-size: 34px;*/
+        /*    line-height: 40px;*/
+        /*    padding: 0 20px;*/
+        /*}*/
+        .container {
+            display: block;
+            grid: none;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .content {
+            display: block;
+        }
+
+        .image {
+            display: none;
+        }
+
+        .store-btn-holder {
+            margin-top: 30px;
+        }
+
+        .store-btn {
+            margin-top: 20px;
+        }
+
+        .icon {
+            margin-right: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div>
+                <div style="">
+                    <img src="icon_2.png" class="icon" width="100" height="100" />
+                    <span style="
+                        display: inline-block;
+                        margin-bottom: 30px;
+                        font-size: 24px;
+                        font-weight: normal;
+                        /*color: gray;*/
+                "></span>
+                </div>
+                <h1>Focus On Shapes And Colors</h1>
+                <span
+                    style="font-size: 20px; font-weight: lighter; color: gray; display:inline-block; padding-top: 20px;">Play
+                    Mess — a concentration Game.</span>
+                <div class="store-btn-holder">
+                    <a href="https://apps.apple.com/app/mess-concentration-game/id1591749951" target="_blank"
+                        class="store-btn">
+                        <img src="appstore_download.png" class="appstore-img">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mess.android&hl=ru&gl=US" target="_blank"
+                        class="store-btn">
+                        <img src="play_mkt.png" class="gplay-img">
+                    </a>
+                </div>
+                <div style="
+                margin-top: 40px;
+            ">
+                    <a href="privacy-policy.html" style="margin-right: 25px">Privacy Policy</a>
+                    <a href="mailto:tobuyapp.ios@gmail.com">Contacts</a>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="phones3.gif" class="intro-image" />
+        </div>
+    </div>
+</body>
+
+</html>
